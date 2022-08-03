@@ -4,5 +4,6 @@ Alpine image with ssh support.
 
 ## Usage
 ```shell
-docker pull fmww/alpine-ssh:latest
+# build
+docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -t your_username/alpine-ssh:latest . --push
 ```
